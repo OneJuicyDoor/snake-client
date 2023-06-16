@@ -26,6 +26,9 @@ const handleUserInput = function (key) {
   if (key === '\u0003') {
     process.exit();
   }
-};
+  if (key === 'y') {
+    connection.write("Say: skill issue" );
+}};
+
 
 module.exports = { setupInput };
