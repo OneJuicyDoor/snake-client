@@ -7,14 +7,10 @@ const connect = function () {
   });
 
   conn.on("connect", () => {
-    conn.write("Name: CAM"); 
-    conn.write("Move: up");
-    setTimeout(() => {
-        conn.write("Move: up")}); 
-    }, 50); 
-  
-return conn;
+    conn.write("Name: CAM");
+  });
 
+  return conn;
 };
 
-module.exports = (connect);
+module.exports = connect;

@@ -1,5 +1,7 @@
-const net = require("net");
 const connect = require("./client");
+const { setupInput } = require("./input");
+
+console.log("Connecting ...");
 
 const conn = connect();
 
@@ -7,20 +9,7 @@ const conn = connect();
 conn.setEncoding("utf8");
 
 conn.on("connect", () => {
-  console.log("does something");
+  console.log("Connected to the server");
 });
 
-console.log("Connecting ...");
-
-const setupInput = function () {
-  const stdin = process.stdin;
-  stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
-  stdin.resume();
-  return stdin;
-};
-const handleUserInput = function () {
-  if (key === '\u0003') {
-  process.exit();
-}
-};
+setupInput(conn);
