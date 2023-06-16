@@ -7,7 +7,12 @@ const connect = function () {
   });
 
   conn.on("connect", () => {
-    conn.write("Name: CAM")}); 
+    conn.write("Name: CAM"); 
+    conn.write("Move: up");
+    setTimeout(() => {
+        conn.write("Move: up")}); 
+    }, 50); 
+  
 return conn;
 
 };
