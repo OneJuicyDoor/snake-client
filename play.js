@@ -12,8 +12,6 @@ conn.on("connect", () => {
 
 console.log("Connecting ...");
 
-stdin.on("data", handleUserInput);
-
 const setupInput = function () {
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -21,8 +19,8 @@ const setupInput = function () {
   stdin.resume();
   return stdin;
 };
-const handleUserInput = function (key) {
+const handleUserInput = function () {
   if (key === '\u0003') {
-    process.exit();
-  }
+  process.exit();
+}
 };
