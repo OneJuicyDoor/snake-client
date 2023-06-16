@@ -6,7 +6,10 @@ const connect = function () {
     port: 50541 // PORT number here
   });
 
-  return conn;
+  conn.on("connect", () => {
+    conn.write("Name: CAM")}); 
+return conn;
+
 };
 
 module.exports = connect;
