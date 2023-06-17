@@ -7,8 +7,9 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+![about to eat](https://github.com/OneJuicyDoor/snake-client/assets/127575295/d30e5e41-13fa-48e3-9946-857f4db070c1)
+
+![krill issue on shrimpment](https://github.com/OneJuicyDoor/snake-client/assets/127575295/a7b6b5cf-6216-451d-9775-2e014fdfa20a)
 
 
 ## Getting Started
